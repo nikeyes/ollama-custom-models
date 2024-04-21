@@ -1,16 +1,6 @@
 # ollama-custom-models
 My personal customs models for local LLMs with Ollama
 
-# Install Ollama locally
-```bash
-brew install ollama
-```
-
-# Uninstall Ollama
-```bash
-brew uninstall ollama
-```
-
 # Run Ollama with docker
 ```bash
 docker run -d -v $(pwd)/.ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
