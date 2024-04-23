@@ -24,9 +24,14 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v $(pwd
 docker exec -it ollama ollama pull gemma:2b
 ```
 
+# Execute a model
+```bash
+docker exec -it ollama ollama run gemma:2b
+```
+
 # Pass in prompt as arguments
 ```bash
-$ ollama run gemma:2b "Summarize this file: $(cat README.md)"
+docker exec -it ollama ollama run gemma:2b "Summarize this file: $(cat README.md)"
 ```
 
 # Show model info
