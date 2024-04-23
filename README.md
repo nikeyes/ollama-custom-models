@@ -3,12 +3,12 @@ My personal customs models for local LLMs with Ollama
 
 # Run with Docker 
 
-## With docker-compose
+## With docker-compose
 ```bash
 docker-compose up
 ```
 
-## Directly with docker
+## Directly with docker
 ### 1. Run Ollama with docker
 ```bash
 docker run -d -v $(pwd)/.ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
